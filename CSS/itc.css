@@ -1,1 +1,241 @@
+/* Color Scheme Variables */
+/* Sea Blue: #0077b6 (Darker Blue) */
+/* Light Blue: #48cae4 (Lighter Blue/Cyan) */
+/* White: #ffffff */
+:root {
+    --sea-blue: #0077b6;
+    --light-blue: #48cae4;
+    --white: #ffffff;
+    --off-white: #f0f8ff; /* Alice Blue - a shade of white/blue */
+}
 
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--sea-blue); /* Main text color */
+    margin: 0;
+    padding: 0;
+}
+
+center {
+    display: block; /* Ensure center acts as a block container */
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: var(--off-white);
+    border-bottom: 5px solid var(--light-blue);
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.header-gif img {
+    max-height: 100px; /* Adjust size of the GIF */
+    border-radius: 5px;
+}
+
+/* Title Section */
+.head {
+    padding: 40px 0 20px 0;
+    background-color: var(--white);
+}
+
+.head h1 {
+    color: var(--sea-blue);
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.head hr {
+    width: 50%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--light-blue), rgba(0, 0, 0, 0));
+}
+
+#sub {
+    color: var(--light-blue);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Overview Section */
+.overview {
+    background-color: var(--off-white);
+    padding: 30px;
+    margin: 30px auto;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.overview h2 {
+    color: var(--sea-blue);
+    border-bottom: 2px solid var(--light-blue);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.overview p {
+    color: #333; /* Darker text for readability */
+    line-height: 1.6;
+}
+
+.whitebox {
+    /* Style for the existing design element */
+    width: 100px;
+    display: none; /* Hide or style this element as needed */
+}
+
+/* Portfolio Grid */
+h3 {
+    color: var(--sea-blue);
+    font-size: 1.8em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.portfolio-container {
+    padding: 20px;
+}
+
+.row1, .row2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.column1, .column2 {
+    text-align: center;
+    flex-basis: calc(33.333% - 20px); /* For row1 */
+    max-width: 300px;
+}
+
+.row2 .column2 {
+    flex-basis: calc(50% - 20px); /* For row2 */
+}
+
+.row1image, .row2image {
+    width: 100%;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 3px solid var(--light-blue);
+}
+
+.row1image:hover, .row2image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--light-blue);
+}
+
+.row1text, .row2text {
+    margin-top: 10px;
+    color: var(--sea-blue);
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    display: flex; /* Use flexbox for side-by-side layout */
+    align-items: center; /* Vertically align items */
+    justify-content: center;
+    background-color: var(--light-blue);
+    padding: 40px 5%;
+    margin-top: 50px;
+    color: var(--white);
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.aboutpic {
+    width: 150px; /* Fixed size for the profile picture */
+    height: 150px;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover;
+    margin-right: 30px;
+    border: 5px solid var(--white);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text h4 {
+    color: var(--white);
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.aboutpara {
+    color: var(--off-white);
+    line-height: 1.5;
+}
+
+/* Animation Implementation */
+/* Keyframes for Fade In/Out */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the designated elements */
+.fade-in {
+    animation: fadeIn 1.5s ease-out; /* Adjust timing as needed */
+    /* Add another property for fade out if you want it to trigger later, 
+    but typically fade-in is used on page load, and fade-out on exit (which needs JavaScript) */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-gif {
+        margin-top: 10px;
+    }
+    .row1, .row2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .column1, .column2 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .overview {
+        width: 90%;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+        max-width: 90%;
+    }
+    .aboutpic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .about-text {
+        text-align: center;
+    }
+}
