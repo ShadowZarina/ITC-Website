@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/portfolio2.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <title>ITC Portfolio 2</title>
+</head>
+
+<body>
+
+<header class="main-header">
+    <nav>
+        <ul>
+            <li><a href="itc.html">Home Page</a></li>
+            <li><a href="portfolio1.html">Portfolio 1</a></li>
+            <li><a href="portfolio2.html">Portfolio 2</a></li>
+            <li><a href="portfolio3.html">Portfolio 3</a></li>
+            <li><a href="portfolio4.html">Portfolio 4</a></li>
+            <li><a href="portfolio5.html">Portfolio 5</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="head fade-in">
+    <h1>Portfolio 2</h1>
+    <p>Lessons 4 to 6</p>
+</div>
+
+<div class="image-gallery fade-in">
+    <div class="image-container">
+        <img src="https://swisscognitive.ch/wp-content/uploads/2022/02/algorithm-formulation.jpg" alt="Image 1 describing the question below">
+    </div>
+    <div class="image-container">
+        <img src="https://online.york.ac.uk/media/mageplaza/blog/post/h/a/hands-working-on-a-laptop-with-a-hologram-showing-icons-depicting-algorithms-above.jpg.webp" alt="Image 2 describing the question below">
+    </div>
+</div>
+
+<div class="question fade-in">
+    <h2>Algorithm, Pseudocode, and Flowcharting</h2>
+    <h3>What is the purpose of algorithms in problem-solving?</h3>
+    <p>
+        Algorithms provide a systematic, step-by-step method for solving problems, ensuring accuracy and efficiency. By breaking down a problem into smaller, manageable parts, algorithms help programmers design clearer and more reliable solutions. They serve as the foundation of all computer programs and automate logical processes.
+    </p>
+
+    <h3>How do pseudocode and flowcharts aid in programming?</h3>
+    <p>
+        Pseudocode uses plain language to outline the logic of a program, making it easier for programmers to plan before coding. Flowcharts, on the other hand, visually map the sequence of operations using symbols and arrows. Both tools help programmers understand the logic, detect errors early, and communicate ideas more effectively.
+    </p>
+
+    <h3>What are the differences between pseudocode and flowcharts?</h3>
+    <p>
+        Pseudocode is written in text form and resembles simplified programming language, while flowcharts are visual and use shapes to represent steps. Flowcharts are easier to understand at a glance, especially for visual learners, while pseudocode is easier to modify. Both accomplish the same purpose, but they differ in format and presentation.
+    </p>
+</div>
+
+<div class="output fade-in">
+    <h3>Create a simple pseudocode and flowchart for a real-life scenario, like a vending machine transaction.</h3>
+    <h4>Pseudocode</h4>
+    <p>
+        <pre>
+1. START <br> 
+2. DISPLAY Drink_Options and Prices <br>
+3. INPUT Payment, Selection_Code <br>
+4. GET Item_Price from Database. <br>
+5. IF ((Selection_Code == “INVALID”) OR (Item == “OUT_OF_STOCK”)) <br>
+    THEN DISPLAY "Invalid selection." <br>
+    GOTO Step 2 <br>
+6. IF (Current_Balance >= Item_Price) <br>
+        THEN Change = Current_Balance - Item_Price. <br>
+        DISPENSE Item, Change <br>
+        UPDATE Inventory (Decrement Stock). <br>
+        DISPLAY "Transaction complete." <br>
+   ELSE: <br>
+        DISPLAY "Insufficient funds." <br>
+        RETURN Current_Balance <br>
+7. END
+        </pre>
+    </p>
+    <h4>Flowchart</h4>
+    <img src="../images/flowchart.png" />
+
+</div>
+
+<div class="image-gallery fade-in">
+    <div class="image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9-g-0lMP81ltWLZFQYIlW33V7mrn63f3Lww&s" alt="Image 1 describing the question below">
+    </div>
+    <div class="image-container">
+        <img src="https://internationaljournalofresearch.com/wp-content/uploads/2020/06/1200-480288054-binary-number-system-1.jpg?w=640" alt="Image 2 describing the question below">
+    </div>
+</div>
+
+<div class="question fade-in">
+    <h2>Concept of Number Systems</h2>
+    <h3>What are the common number systems used in computing?</h3>
+    <p> The most common number systems in computing include decimal (base 10), binary (base 2), octal (base 8), and hexadecimal (base 16). Binary is used by computers internally, while octal and hexadecimal provide shorter representations of long binary values. Each system has a specific use and helps simplify computer operations and programming tasks. </p>
+    
+    <h3>How do conversions between binary, decimal, and hexadecimal work?</h3>
+    <p> Conversions work by applying place values based on the base of the number system. For example, converting binary to decimal involves multiplying each digit by powers of 2, while converting decimal to binary involves repeated division by 2. Hexadecimal often converts easily to binary by replacing each digit with its 4-bit binary equivalent. </p>
+    
+    <h3>Why is the binary system essential for computers?</h3>
+    <p> The binary system is essential because computers operate using electrical signals that can only represent two states: ON and OFF. These states correspond perfectly to the digits 1 and 0 in binary. As a result, binary becomes the most efficient and reliable system for machine-level communication. </p>
+</div>
+
+<div class="output fade-in">
+    <h3>Demonstrate the steps to convert a decimal number (e.g. 25) into binary and hexadecimal.</h3>
+    <p>
+        <h4>Decimal to Binary Conversion (Base 10 to Base 2)</h4>
+<strong>Step 1: Repeated Division by 2 (The Base)</strong>
+<br>The core of the process involves repeatedly dividing the current decimal number by 2 (the target base) and carefully recording the quotient and the remainder in each step. The process continues until the quotient of the division becomes 0.
+
+<ul>
+    <li>Initial Step: Divide the original decimal number 25 by 2.
+<br>25 / 2 = 12  with a remainder of 1
+<br>The first remainder calculated 1 is the Least Significant Bit (LSB), representing 20.
+    </li>
+    <li>Second Step: Take the new quotient, 12, and divide it by 2.
+<br>12 / 2 = 6  with a remainder of 0 
+    </li>
+    <li>Third Step: Take the new quotient, 6, and divide it by 2.
+<br>6 / 2 = 3  with a remainder of 0
+    </li>
+    <li>Fourth Step: Take the new quotient, 3, and divide it by 2.
+<br>3 / 2 = 1  with a remainder of 1
+    </li>
+    <li>Fifth Step: Take the new quotient, 1, and divide it by 2.
+<br>1 / 2 = 0  with a remainder of 1
+<br>The final remainder calculated 1 is the Most Significant Bit (MSB), representing the highest power of 2.
+    </li>
+</ul>
+
+
+<strong>Step 2: Reading the Binary Result</strong>
+<br>To construct the final binary number, you must read and combine the remainders calculated in Step 1. The sequence must be read in reverse order, from the last remainder calculated (the MSB) to the first remainder calculated (the LSB).
+<ul>
+    <li>
+Remainders in Calculation Order (Top to Bottom): 1, 0, 0, 1, 1
+    </li>
+    <li>
+     Reading Order (Bottom to Top / MSB to LSB): 1, 1, 0, 0, 1   
+    </li>
+</ul>
+
+
+<strong>Step 3: Final Binary Value and Padding</strong>
+<br>State the final binary equivalent for the original decimal number. For standard computer representation, it is often necessary to pad the result with leading zeros to make it a standard length (e.g., 8 bits for a byte or 16 bits for a word).
+<br><br>Final Binary Value: The decimal number 25 is equivalent to the binary number 110012.
+<br>
+<hr>
+<h4>Decimal to Hexadecimal Conversion (Base 10 to Base 16)</h4>
+This process also uses the Repeated Division Method, but the target base for the division is 16.
+<br><br><strong>Step 1: Repeated Division by 16 (The Base)</strong>
+<br>Repeatedly divide the current decimal number by 16 and record the quotient and the remainder. The remainders can range from 0 to 15. If a remainder is 10 or greater, it must be immediately converted to its corresponding hexadecimal letter (A = 10) through (F = 15). Continue until the quotient is 0.
+
+<table>
+  <thead>
+    <tr>
+      <th>Remainder Value</th>
+      <th>Hexadecimal Digit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>F</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+    <li>Initial Step: Divide the original decimal number 25 by 16.
+<br>25 / 16 = 1  with a remainder of 9
+<br>Since the remainder (9) is less than 10, the hexadecimal digit is 9.</li>
+    <li>Second Step: Take the new quotient, 1, and divide it by 16.
+<br>1 / 16 = 0  with a remainder of 1
+<br>Since the remainder 1 is less than 10, the hexadecimal digit is 1. The process stops as the quotient is 0.</li>
+</ul>
+
+<strong>Step 2: Reading the Hexadecimal Result</strong>
+<br>Form the hexadecimal number by reading the calculated remainders/digits in reverse order, from the last remainder calculated (MSB) to the first remainder calculated (LSB).
+<ul>
+    <li>Remainders/Digits in Calculation Order (Top to Bottom): 9, 1</li>
+    <li>Reading Order (Bottom to Top / MSB to LSB): 1, 9</li>
+</ul>
+<strong>Step 3: Final Hexadecimal Value</strong>
+<br>State the final hexadecimal equivalent for the original decimal number, using the subscript 16to denote the base.
+<br><br>Final Hexadecimal Value: Reading the digits upwards (1 then 9), the decimal number 25 is equal to the hexadecimal number 1916.
+    </p>
+</div>
+
+<div class="image-gallery fade-in">
+    <div class="image-container">
+        <img src="https://st.depositphotos.com/9625262/56150/v/600/depositphotos_561504556-stock-video-4k-abstract-technology-blue-background.jpg" alt="Image 1 describing the question below">
+    </div>
+    <div class="image-container">
+        <img src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg" alt="Image 2 describing the question below">
+    </div>
+</div>
+
+<div class="question fade-in">
+    <h2>Software and Application Concepts: General and Specific Purpose Software</h2>
+    <h3>What is the difference between general-purpose and specific-purpose software?</h3>
+    <p> General-purpose software is designed to perform a wide variety of tasks, such as creating documents, browsing the internet, or editing images. Specific-purpose software is created for a single or specialized function, like monitoring hospital patients or managing a payroll system. The main difference lies in flexibility—general-purpose software is versatile, while specific-purpose software is specialized. </p>
+    
+    <h3>How do they cater to different user needs?</h3>
+    <p> General-purpose software caters to everyday users who need tools for writing, spreadsheets, communication, or media editing. Specific-purpose software caters to industries or organizations that require unique tools to perform highly specialized tasks efficiently. By serving different needs, both types of software help individuals and businesses accomplish goals effectively. </p>
+    
+    <h3>What are examples of each type?</h3>
+    <p> Examples of general-purpose software include Microsoft Word, Google Chrome, and Adobe Photoshop. Examples of specific-purpose software include ATM software, school grading systems, hospital management systems, and POS (Point of Sale) systems. These examples show the variety of tasks software can help accomplish. </p>
+</div>
+
+<div class="output fade-in">
+    <h3>Compare general-purpose software (e.g., MS Word) with specific-purpose software (e.g., payroll software) in terms of features and use cases.</h3>
+    <p>
+The expansive world of computer applications can be broadly categorized into two major types: general-purpose software, such as Microsoft Word and Google Sheets, and specific-purpose software, such as dedicated payroll or inventory management systems. While the former offers remarkable versatility across a multitude of everyday tasks, the latter provides deep, specialized functionality meticulously tailored to a single, niche use case. Understanding the trade-offs between flexibility and specialization is key to effective system utilization.
+
+<br><br>General-purpose software, often termed "off-the-shelf" productivity tools, is characterized by a wide array of generic features. Applications within the Microsoft 365 suite (like Word or Excel) enable wide-ranging tasks from text composition to complex data modeling. Their strength lies in adaptability, allowing a user to solve many different types of problems, making them highly cost-effective and accessible. However, this flexibility comes at the cost of automation for niche, highly structured processes required in business operations.
+
+<br><br>Conversely, specific-purpose software (SPS) is engineered with highly focused features necessary for a singular industry or function. Examples include QuickBooks Payroll for financial reporting and Shopify POS for retail management. These applications provide critical automation for tasks that require complex, repetitive logic, such as automated tax calculations, stock reorder alerts, or industry-specific compliance reporting. The SPS maximizes efficiency and minimizes human error because it is perfectly aligned with its operational domain.
+
+<br><br>The contrasting use cases clearly illustrate this difference. For a student writing a literature review, MS Word is ideal: it allows them to format citations, manage document structure, and draft a personal letter, all using the same versatile tool. The student values its broad applicability for creative and academic output.
+
+<br><br>For a grocery store owner, however, generic software is impractical for core, high-stakes operations. They need specific-purpose inventory software, such as a full Retail Management System (RMS), that automatically tracks expiration dates, generates precise purchase orders when stock runs low, and integrates seamlessly with the point-of-sale system—tasks that Google Sheets cannot perform reliably or efficiently. Furthermore, a businessman managing a large team requires dedicated payroll software, like QuickBooks Payroll, to accurately calculate hourly wages, complex deductions, and tax withholdings for hundreds of employees with minimal human input. While MS Excel (a general-purpose tool) could theoretically be customized for basic tracking, the specialized payroll software performs complex, statutory calculations instantly and reliably, reducing legal and financial risk. In summary, general-purpose tools maximize flexibility and utility across diverse tasks, but specialized applications maximize efficiency, automation, and accuracy within a predefined business domain.
+
+    </p>
+</div>
+
+</body>
+</html>

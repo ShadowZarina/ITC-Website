@@ -1,0 +1,220 @@
+/* Color Scheme Variables */
+:root {
+    --dark-blue: #151f50;
+    --sea-blue: #0a57a4;
+    --light-blue: #6397db;
+    --white: #ffffff;
+    --off-white: #d3e3f7; 
+}
+
+/* Global Styles */
+body {
+    font-family: 'Tahoma', sans-serif;
+    color: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/skygif1.gif"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Page Container */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    border-bottom: none; 
+}
+
+/* Navigation Styles */
+nav {
+    background-color: var(--sea-blue);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    flex-grow: 1; 
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 0; 
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+/* Head Section (Portfolio Title) */
+.head {
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+.head h1 {
+    color: var(--dark-blue);
+    font-size: 3em;
+    border-bottom: 4px solid var(--sea-blue);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.head p {
+    color: var(--light-blue);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+/* Images */
+.image-gallery {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px; 
+}
+
+.image-container {
+    flex: 1;
+    overflow: hidden; 
+    border: 1px solid var(--off-white);
+    border-radius: 10px; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+/* Question and Output Sections (Main Content Blocks) */
+.question, .output {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+/* Style for the "question" blocks */
+.question {
+    background-color: var(--white);
+}
+
+.question h2 {
+    color: var(--sea-blue);
+    font-size: 1.8em;
+    margin-top: 0;
+    border-bottom: 1px dashed var(--light-blue);
+    padding-bottom: 10px;
+}
+
+.question h3 {
+    color: var(--dark-blue);
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.question p {
+    color: var(--dark-blue);
+    text-align: justify;
+}
+
+/* Style for the "output" blocks */
+.output {
+    background-color: var(--off-white);
+}
+
+.output h3 {
+    color: var(--sea-blue);
+    font-size: 1.5em;
+    margin-top: 0;
+    text-transform: none;
+    text-align: left;
+    border-bottom: 2px solid var(--light-blue);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.output p {
+    color: var(--dark-blue);
+    text-align: justify;
+    font-style: italic;
+}
+
+/* Animation Implementation */
+
+/* Keyframes for Fade In/Out */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-out; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 15px 0;
+    }
+
+    .main-header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li a {
+        padding: 8px 15px;
+    }
+
+    .head h1 {
+        font-size: 2.2em;
+    }
+
+    .question, .output {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .question h2 {
+        font-size: 1.5em;
+    }
+}
+

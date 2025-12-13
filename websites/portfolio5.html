@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/portfolio5.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <title>ITC Portfolio 5</title>
+</head>
+
+<body>
+
+<header class="main-header">
+    <nav>
+        <ul>
+            <li><a href="itc.html">Home Page</a></li>
+            <li><a href="portfolio1.html">Portfolio 1</a></li>
+            <li><a href="portfolio2.html">Portfolio 2</a></li>
+            <li><a href="portfolio3.html">Portfolio 3</a></li>
+            <li><a href="portfolio4.html">Portfolio 4</a></li>
+            <li><a href="portfolio5.html">Portfolio 5</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="head fade-in">
+    <h1>Portfolio 5</h1>
+    <p>Lessons 12 to 14</p>
+</div>
+
+<div class="image-gallery fade-in">
+    <div class="image-container">
+        <img src="https://www.computersciencedegreehub.com/wp-content/uploads/2022/08/HTML.jpg" alt="Image 1 describing the question below">
+    </div>
+    <div class="image-container">
+        <img src="https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg" alt="Image 2 describing the question below">
+    </div>
+</div>
+
+<div class="question fade-in">
+    <h2>HTML Programming</h2>
+    <h3>What is the structure of an HTML document?</h3>
+    <p>
+        An HTML document begins with the DOCTYPE declaration, followed by the &lt;html&gt; tag that contains the entire page. Inside it, the &lt;head&gt; section holds metadata and the &lt;title&gt;, while the &lt;body&gt; section contains all the visible content. This structure ensures that browsers understand how to display the webpage correctly.
+    </p>
+
+    <h3>How are HTML tags used to structure content on a webpage?</h3>
+    <p>
+        HTML tags define different parts of a webpage such as headings, paragraphs, images, links, and tables. Each tag has a specific purpose and helps organize content so it is readable and structured. These tags guide the browser on how to display each section of the webpage.
+    </p>
+
+    <h3>What are common HTML tags?</h3>
+    <p>
+        Common HTML tags include &lt;h1&gt; for headings, &lt;p&gt; for paragraphs, &lt;a&gt; for links, and &lt;img&gt; for images. Other important tags include &lt;div&gt; for layout, &lt;ul&gt; and &lt;li&gt; for lists, and &lt;table&gt; for tabular data. These tags create the foundation of most web pages.
+    </p>
+</div>
+
+<div class="output fade-in">
+    <h3>Create a simple HTML structure for a personal webpage including headings, paragraphs, and lists.</h3>
+    <h4>1. index.html</h4>
+<pre>>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;🌊 Andrea To Chip - Home&lt;/title&gt;
+    &lt;link rel="stylesheet" href="home.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div class="logo"&gt;
+            &lt;h1&gt;Andrea To Chip&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html" class="active"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="background.html"&gt;Background&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="art.html"&gt;Art Portfolio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="coding.html"&gt;Coding Portfolio&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main class="hero-section"&gt;
+        &lt;section class="intro-content"&gt;
+            &lt;h1&gt;Hello, I'm &lt;strong&gt;Andrea To Chip&lt;/strong&gt;!&lt;/h1&gt;
+            &lt;p&gt;Hi! I'm Andrea, a first-year college student from Cebu, Philippines, currently studying under BS
+            Information Systems. Although I am currently studying in a course that lies in logic and mathematics, I
+            absolutely enjoy working with the creativity that lies in art!&lt;/p&gt;
+            &lt;p&gt;Explore my &lt;strong&gt;Background&lt;/strong&gt; to learn more about my journey, and view my work in
+            the &lt;strong&gt;Art Portfolio&lt;/strong&gt; and &lt;strong&gt;Coding Portfolio&lt;/strong&gt; sections.&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section class="photo-area"&gt;
+            &lt;div class="circle-photo"&gt;
+                &lt;img caption=”A Photo of Myself” src=”./images/picture-of-self.png /&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2025 Andrea To Chip. Crafted with &lt;strong&gt;Waves&lt;/strong&gt; and &lt;strong&gt;Circles&lt;/strong&gt;.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+    <h4>2. background.html</h4>
+
+    <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;🌊 Andrea - Background&lt;/title&gt;
+    &lt;link rel="stylesheet" href="background.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div class="logo"&gt;
+            &lt;h1&gt;Andrea To Chip&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="background.html" class="active"&gt;Background&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="art.html"&gt;Art Portfolio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="coding.html"&gt;Coding Portfolio&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main class="section-container"&gt;
+        &lt;section class="about-me"&gt;
+            &lt;h2&gt;My Journey&lt;/h2&gt;
+            &lt;p&gt;I consider myself a multi-passionate person, meaning there are plenty of things I'm passionate about, 
+            including software engineering, data science, illustration, graphic design and even creating cute food and
+            desserts!&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section class="education"&gt;
+            &lt;h3&gt;Education&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;University of San Carlos – BS Computer Science (2025 - 2028)&lt;/li&gt;
+	    &lt;li&gt;University of San Carlos – Arts &amp; Design Strand (2024 - 2025)&lt;/li&gt;
+                &lt;li&gt;University of San Carlos – STEM Strand (2023 - 2024)&lt;/li&gt;
+	    &lt;li&gt;Bethany Christian School – Junior High School (2019 - 2023)&lt;/li&gt;
+	    &lt;li&gt;Bethany Christian School – Elementary School (2013 - 2019)&lt;/li&gt;
+            &lt;/ul&gt;
+	    &lt;h3&gt;Achievements&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;High Honors - Grade 12 - STEM Strand (2024 - 2025)&lt;/li&gt;
+	    &lt;li&gt;High Honors - Grade 11 - AD Strand (2023 - 2024)&lt;/li&gt;
+	    &lt;li&gt;High Honors - Grade 10 - Junior High School (2019 - 2023)&lt;/li&gt;
+            &lt;li&gt;Salutatorian - Grade 6 - Elementary School (2018 - 2019 )&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/section&gt;
+
+        &lt;section class="skills"&gt;
+            &lt;h3&gt;Skills &amp; Expertise&lt;/h3&gt;
+            &lt;p&gt;A paragraph introducing your main skill sets in both art and coding.&lt;/p&gt;
+            &lt;div class="skill-lists"&gt;
+                &lt;div class="art-skills"&gt;
+                    &lt;h4&gt;🎨 Artistic Skills&lt;/h4&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Digital Painting&lt;/li&gt;
+                        &lt;li&gt;Graphic Design&lt;/li&gt;
+                        &lt;li&gt;Conceptual Design&lt;/li&gt;
+                        &lt;li&gt;Illustration&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+	        &lt;div class="art-stack"&gt;
+                    &lt;h4&gt;🎨 Art Stack&lt;/h4&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Figma&lt;/li&gt;
+                        &lt;li&gt;Canva&lt;/li&gt;
+                        &lt;li&gt;Procreate&lt;/li&gt;
+                        &lt;li&gt;Wix&lt;/li&gt;
+                        &lt;li&gt;Adobe Illustrator&lt;/li&gt;
+                        &lt;li&gt;Adobe Photoshop&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+
+                &lt;div class="coding-skills"&gt;
+                    &lt;h4&gt;💻 Coding Stack&lt;/h4&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;HTML &amp; CSS&lt;/li&gt;
+		        &lt;li&gt;JavaScript&lt;/li&gt;
+		        &lt;li&gt;C&lt;/li&gt;
+                        &lt;li&gt;Python&lt;/li&gt;
+                        &lt;li&gt;React&lt;/li&gt;
+                        &lt;li&gt;SQL&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2025 Andrea To Chip. Crafted with &lt;strong&gt;Waves&lt;/strong&gt; and &lt;strong&gt;Circles&lt;/strong&gt;.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+    <h4>3. art.html</h4>
+
+    <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;🌊 Andrea To Chip - Art Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="art.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div class="logo"&gt;
+            &lt;h1&gt;Andrea To Chip&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="background.html"&gt;Background&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="art.html" class="active"&gt;Art Portfolio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="coding.html"&gt;Coding Portfolio&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main class="portfolio-grid"&gt;
+        &lt;h2&gt;My Creative Waves 🎨&lt;/h2&gt;
+        &lt;p&gt;A showcase of my artistic works, demonstrating creativity, style, and technique.&lt;/p&gt;
+	
+        &lt;article class="portfolio-item"&gt;
+            &lt;div class="item-visual"&gt;&lt;/div&gt;
+            &lt;h3&gt;The Busy Bees&lt;/h3&gt;
+            &lt;p&gt;Wishing to bring bubbly art and sweet treats to the Senior High students at the University of San Carlos, 
+            we established The Busy Bees! The Busy Bees is&amp;nbsp; centered around spring, with vibrant pastel&amp;nbsp;
+            colors and easter motifs to bring a light&amp;nbsp; and bright atmosphere to the school's&amp;nbsp; Intramural
+            Days! We made sure to implement cute elements such as the animated bee to serve as the company's
+            mascot, light yellows, pinks and oranges, as well as bold, handwritten fonts to add&amp;nbsp; playfulness to
+            everything we create.&lt;/p&gt;
+	    &lt;div class="item-visual"&gt;
+	        &lt;img caption=”The Busy Bees Logo” src=”./images/art/busy-bees-logo.png” /&gt;
+	        &lt;img caption=”The Busy Bees Tarpaulin” src=”./images/art/busy-bees-tarp.png” /&gt;
+	        &lt;img caption=”The Busy Bees Food &amp; Shirts Menu” src=”./images/art/busy-bees-food-menu.png” /&gt;
+	        &lt;img caption=”The Busy Bees Sticker Menu” src=”./images/art/busy-bees-stickers.png” /&gt;
+            &lt;/div&gt;
+        &lt;/article&gt;
+
+        &lt;article class="portfolio-item"&gt;
+            &lt;div class="item-visual"&gt;&lt;/div&gt;
+            &lt;h3&gt;Youth Advocacy for the Eternal Being Magazine&lt;/h3&gt;
+            &lt;p&gt;Youth Advocacy for the Eternal Being, or YAEB for short, is a religion-focused advocacy that&amp;nbsp;
+            wishes to resolve religious discrimination across the Philippines. As the editor-in-chief of the editorial&amp;nbsp; 
+            team, I was in charge of assigning tasks, designing the graphics and content, leading the photography and 
+            creative direction of the magazine, and ensuring every page leads to a single coherent&amp;nbsp; goal: to bring 
+            light to religion and spread awareness of religious discrimination to its readers. To emphasize the gravity of 
+            the issue discussed, the magazine takes on a solemn color palette dominated by blacks and blues. The 
+            imagery, drawings and&amp;nbsp; content used throughout the magazine also share this serious theme.&lt;/p&gt;
+	    &lt;div class="item-visual"&gt;
+	        &lt;img caption=”YAEB Magazine Cover” src=”./images/art/YAEB.png” /&gt;
+            &lt;/div&gt;
+            &lt;a href="https://heyzine.com/flip-book/84d95231cb.html" target="_blank" class="button"&gt;View Flipbook
+            &lt;/a&gt;
+        &lt;/article&gt;
+
+        &lt;article class="portfolio-item"&gt;
+            &lt;div class="item-visual"&gt;&lt;/div&gt;
+            &lt;h3&gt;USC Shirt and Hoodie Contest Designs&lt;/h3&gt;
+            &lt;p&gt;In Grade 12, I was tasked to represent my block at the USC Merch Design Making Contest 2024 for 
+            Maximalist Shirts and Minimalist Hoodies alongside one of my blockmates. Both the hoodie and shirt take 
+            inspiration from the anti-design and Y2K apocalyptic aesthetics, with the black shirt taking a bolder approach 
+            with the vibrant neon&amp;nbsp; colors clashing against a dark background with plenty of clip art and labels, 
+            and the white hoodie taking a cleaner approach with more diluted colors in a&amp;nbsp; more peaceful white 
+            background. The black shirt won 2nd runner up in the Maximalist Shirts category.&lt;/p&gt;
+	    &lt;div class="item-visual"&gt;
+	        &lt;img caption=”Maximalist Shirt” src=”./images/art/maximalist-shirt.png” /&gt;
+	        &lt;img caption=”Minimalist Hoodie” src=”./images/art/minimalist-hoodie.png” /&gt;
+            &lt;/div&gt;
+        &lt;/article&gt;
+        
+        &lt;article class="portfolio-item"&gt;
+            &lt;div class="item-visual"&gt;&lt;/div&gt;
+            &lt;h3&gt;Capy’s Calculations&lt;/h3&gt;
+            &lt;p&gt;In order to help achieve SDG 4, or Quality Education, we developed Capy's Calculations, an educational 
+            math game that teaches elementary and high-school students fundamental mathematics&amp;nbsp; through a 
+            never-before-seen game! We designed&amp;nbsp; our main character, Capy the Capybara, to be an&amp;nbsp; 
+            adventurous yet fun soul, hence the vibrant&amp;nbsp; warm colors and bold outlines surrounding the character. 
+            The art in the app logo and poster were&amp;nbsp; fully hand-drawn to depict the raw creativity and personal 
+            touch of our brand into our&amp;nbsp; visual designs. The game proved to be a huge success as it was 
+            presented with 5 awards, 4 of which were consecutive 1st places at University of San&amp;nbsp; Carlos' Entrep 
+            Fair 2025.&lt;/p&gt;
+	    &lt;div class="item-visual"&gt;
+	        &lt;img caption=”Capy’s Calculations App Logo” src=”./images/art/capy-app-logo.png” /&gt;
+	        &lt;img caption=”Capy’s Calculations Poster” src=”./images/art/capy-poster.png” /&gt;
+            &lt;/div&gt;
+        &lt;/article&gt;
+
+        &lt;article class="portfolio-item"&gt;
+            &lt;div class="item-visual"&gt;&lt;/div&gt;
+            &lt;h3&gt;Earth’s Urgent Call&lt;/h3&gt;
+            &lt;p&gt;This website was created to promote Earth's Urgent Call, an advocacy to fight climate change. The
+            &amp;nbsp; website, decorated with nature-themed green and&amp;nbsp; yellow elements, educates its users on the 
+            causes&amp;nbsp; and effects of climate change and offers them a way of fighting it through specific initiatives 
+            and the opportunity to donate.&lt;/p&gt;
+	    &lt;div class="item-visual"&gt;
+	        &lt;img caption=”Earth’s Urgent Call Homepage” src=”./images/art/earths-urgent-homepage.png” /&gt;
+	        &lt;img caption=”Earth’s Urgent Call Initiatives” src=”./images/art/earths-urgent-initiatives.png” /&gt;
+	        &lt;img caption=”Earth’s Urgent Call Mission” src=”./images/art/earths-urgent-mission.png” /&gt;
+            &lt;/div&gt;
+            &lt;a href="https://andreatochip.wixsite.com/ad11aclimatechange" target="_blank" class="button"&gt;View Live
+            &lt;/a&gt;
+        &lt;/article&gt;
+
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2025 Andrea To Chip. Crafted with &lt;strong&gt;Waves&lt;/strong&gt; and &lt;strong&gt;Circles&lt;/strong&gt;.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+    <h4>4. coding.html</h4>
+
+    <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;🌊 Andrea To Chip - Coding Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="coding.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div class="logo"&gt;
+            &lt;h1&gt;Andrea To Chip&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="background.html"&gt;Background&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="art.html"&gt;Art Portfolio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="coding.html" class="active"&gt;Coding Portfolio&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main class="portfolio-list"&gt;
+        &lt;h2&gt;My Technical Sands 💻&lt;/h2&gt;
+        &lt;p&gt;A collection of my technical projects, demonstrating problem-solving, clean code, and user experience.&lt;/p&gt;
+
+        &lt;article class="project-item"&gt;
+            &lt;h3&gt;Eco Serpents&lt;/h3&gt;
+            &lt;p&gt;Eco Serpents is an original game based on SDG 12, or Responsible Consumption and Production, 
+            created in Scratch to be showcased in University of San Carlos' Science and Technology Fair in 2024. In the 
+            game, you play as a snake that must consume garbage to gain points. All assets were drawn and coded by 
+            hand.&lt;/p&gt;
+            &lt;div class="item-visual"&gt;
+	        &lt;img caption=”Eco Serpents Title Screen” src=”./images/coding/eco-serpents-title.png” /&gt;
+            &lt;/div&gt;
+            &lt;a href="https://scratch.mit.edu/projects/1075564212/" target="_blank" class="button"&gt;View Live&lt;/a&gt;
+        &lt;/article&gt;
+
+        &lt;article class="project-item"&gt;
+            &lt;h3&gt;Budget and Expense Tracker&lt;/h3&gt;
+            &lt;p&gt;This program, created in C, allows users to&amp;nbsp; manage their budgets and expenses through&amp;nbsp; 
+            setting budget goals, recording their budgets and expenses throughout five categories including food, rent, 
+            entertainment, projects and utilities, as&amp;nbsp; well as build trends and tables to showcase the users' 
+            financial habits. The program utilizes modularized functions, switch cases and TXT files in order to monitor 
+            and save users' inputs. This program was created as the final project for Computer Fundamentals in 
+            Programming 01 and received one of the highest scores out of the entire strand.&lt;/p&gt;
+            &lt;div class="item-visual"&gt;
+	        &lt;img caption=”Budget and Expense Tracker Main Function and Variables” src=”./images/coding/budget-
+            expense-main.png” /&gt;
+	        &lt;img caption=”Budget and Expense Tracker Sample Output” src=”./images/coding/budget-expense-main.
+            png” /&gt;
+            &lt;/div&gt;
+            &lt;a href="https://github.com/ShadowZarina/C-Projects/blob/main/Budget%20and%20Expense%20Tracker.c
+            " target="_blank" class="button"&gt;Budget and Expense Tracker&lt;/a&gt;
+        &lt;/article&gt;
+
+        &lt;article class="project-item"&gt;
+            &lt;h3&gt;COVID 19 Data Tracker&lt;/h3&gt;
+            &lt;p&gt;A Python program that analyzes COVID 19 cases across regions and compiles them into a table with 
+            readable data through Pandas and Matplotlib.&lt;/p&gt;
+            &lt;div class="item-visual"&gt;
+	    &lt;img caption=”COVID 19 Code” src=”./images/coding/covid-code.png” /&gt;
+            &lt;img caption=”COVID 19 Data Table” src=”./images/coding/covid-data.png” /&gt;
+	    &lt;/div&gt;
+            &lt;a href="https://github.com/ShadowZarina/Python-Projects/tree/main/COVID%2019%20Data%20Tracker" 
+            target="_blank" class="button"&gt;COVID 19 Data Tracker&lt;/a&gt;
+        &lt;/article&gt;
+        
+        &lt;article class="project-item"&gt;
+            &lt;h3&gt;Recipe Page&lt;/h3&gt;
+            &lt;p&gt;This recipe page website was created using HTML and CSS, managed and published through GitHub. 
+            The page features semantic HTML, CSS Flexbox, and GitHub Pages in order to create it. This website was 
+            created for a challenge in&amp;nbsp; Frontend Mentor, and has received positive feedback for its accuracy to its 
+            original&amp;nbsp; material.&lt;/p&gt;
+            &lt;div class="item-visual"&gt;
+	     &lt;img caption=”Recipe Page” src=”./images/coding/recipe-page.png” /&gt;
+	    &lt;/div&gt;
+            &lt;a href="https://shadowzarina.github.io/fem-recipe-page/" target="_blank" class="button"&gt;View Live&lt;/a&gt;
+	        &lt;a href="https://github.com/ShadowZarina/fem-recipe-page" target="_blank" class="button"&gt;Recipe 
+            Page&lt;/a&gt;
+        &lt;/article&gt;
+
+        &lt;article class="project-item"&gt;
+            &lt;h3&gt;Calculator&lt;/h3&gt;
+            &lt;p&gt;A calculator with pastel aesthetics created with HTML, CSS and JS. Each button corresponds to a key, 
+            making typing and calculation easy, and answers are produced in milliseconds!&lt;/p&gt;
+            &lt;div class="item-visual"&gt;
+	    &lt;img caption=”Calculator Code” src=”./images/coding/calculator-code.png” /&gt;
+            &lt;img caption=”Calculator Output” src=”./images/coding/calculator-output.png” /&gt;
+	    &lt;/div&gt;
+            &lt;a href="https://github.com/ShadowZarina/js-calculator" target="_blank" class="button"&gt;Calculator&lt;/a&gt;
+        &lt;/article&gt;
+
+	    &lt;h2&gt;Find my work on GitHub!&lt;/h2&gt;
+	    &lt;a href="https://github.com/ShadowZarina" target="_blank" class="button"&gt;View Live&lt;/a&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2025 Andrea To Chip. Crafted with &lt;strong&gt;Waves&lt;/strong&gt; and &lt;strong&gt;Circles&lt;/strong&gt;.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</div>
+
+<div class="image-gallery fade-in">
+    <div class="image-container">
+        <img src="https://hermes.dio.me/articles/cover/af74bd77-3669-4c71-91e3-c572d2ca0793.png" alt="Image 1 describing the question below">
+    </div>
+    <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y3NzfGVufDB8fDB8fHww" alt="Image 2 describing the question below">
+    </div>
+</div>
+
+<div class="question fade-in">
+    <h2>CSS Programming</h2>
+    <h3>How does CSS enhance HTML?</h3>
+    <p>
+        CSS enhances HTML by adding styling such as colors, spacing, fonts, borders, and layouts. Without CSS, web pages would appear plain and unformatted. With CSS, developers can create visually appealing and user-friendly designs.
+    </p>
+
+    <h3>What are the main components of CSS syntax?</h3>
+    <p>
+        CSS syntax consists of a selector, properties, and values. The selector chooses the HTML element, the property defines what to change (like color or font size), and the value tells how to apply that change. Together, these components allow precise control over webpage appearance.
+    </p>
+
+    <h3>How can CSS be applied to improve the look and feel of web pages?</h3>
+    <p>
+        CSS can be applied inline, inside the HTML document, or through an external stylesheet. It improves the look and feel by controlling layout, aligning elements, and creating consistent styles across multiple pages. CSS also supports animations, responsive design, and customized themes.
+    </p>
+</div>
+
+<div class="output fade-in">
+    <h3>Write a CSS style sheet to style a webpage with specific colors, font sizes, and layouts.</h3>
+    <pre>
+/* Color Palette: 
+    #f5eee7 (Light Sand/Background) 
+    #ccbb9d (Warm Tan/Accent) 
+    #1e1c18 (Dark Text/Footer) 
+    #d5dae6 (Light Blue-Grey) 
+    #c1cfda (Mid Blue)
+    #adc1d1 (Main Ocean Blue) 
+*/
+
+/* --- GLOBAL STYLES --- */
+/* Import custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+:root {
+    --color-sand: #f5eee7;
+    --color-ocean-dark: #adc1d1; /* Main Blue */
+    --color-ocean-medium: #c1cfda; /* Mid Blue */
+    --color-ocean-light: #d5dae6; /* Light Blue-Grey */
+    --color-accent-tan: #ccbb9d;
+    --color-dark-text: #1e1c18;
+
+    --font-gambetta: 'Gambetta', serif; /* Use fallback if local font isn't set */
+    --font-manrope: 'Manrope', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-manrope);
+    color: var(--color-dark-text);
+    background-color: var(--color-sand); /* Light Sand/Beach Background */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-gambetta);
+    color: var(--color-ocean-dark);
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+
+p { margin-bottom: 1em; }
+
+a {
+    color: var(--color-ocean-dark);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--color-accent-tan);
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    background-color: var(--color-ocean-dark); /* Main Ocean Blue */
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    color: var(--color-sand);
+    font-size: 1.8em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--color-ocean-light);
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 20px; /* Round elements */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: var(--color-sand);
+    color: var(--color-ocean-dark);
+}
+
+/* --- MAIN CONTENT LAYOUT --- */
+main {
+    padding: 40px 5%;
+    min-height: 70vh;
+}
+
+.section-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* --- ROUND ELEMENTS / CIRCLES --- */
+.circle-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Perfect Circle */
+    background-color: var(--color-ocean-medium); /* Placeholder for photo */
+    border: 5px solid var(--color-accent-tan);
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: var(--color-dark-text); /* Placeholder text color */
+    font-style: italic;
+}
+
+/* --- WAVE/SHAPE DIVIDER EXAMPLE --- */
+.wave-divider {
+    height: 50px;
+    background: linear-gradient(to bottom, var(--color-ocean-light), var(--color-sand));
+    border-radius: 0 0 50% 50% / 0 0 100px 100px; /* Rounded wave effect */
+}
+
+
+/* --- FOOTER (Dark Sand/Shell color) --- */
+footer {
+    background-color: var(--color-dark-text);
+    color: var(--color-ocean-light);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* Home Page layout styles */
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-content {
+    max-width: 500px;
+}
+
+.photo-area {
+    text-align: center;
+}
+
+.caption {
+    font-style: italic;
+    color: var(--color-accent-tan);
+}
+
+/* Specific styles for Portfolio pages (Art & Coding) */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding-top: 30px;
+}
+
+.portfolio-item, .project-item {
+    background-color: var(--color-ocean-light);
+    border-radius: 15px; /* Round elements */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.item-visual {
+    height: 200px;
+    background-color: var(--color-ocean-medium);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-dark-text);
+    font-style: italic;
+}
+
+/* Coding page button */
+.button {
+    display: inline-block;
+    background-color: var(--color-accent-tan);
+    color: var(--color-dark-text);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+    </pre>
+</div>
+
+<div class="image-gallery fade-in">
+    <div class="image-container">
+        <img src="https://5gworldpro.com/wp-content/uploads/2023/09/1697380698315.png" alt="Image 1 describing the question below">
+    </div>
+    <div class="image-container">
+        <img src="https://www.q3tech.com/wp-content/uploads/2024/01/Generative-AI-1.jpg" alt="Image 2 describing the question below">
+    </div>
+</div>
+
+<div class="question fade-in">
+    <h2>Future of Computing: Generative AI and Data Analytics</h2>
+    <h3>What is Generative AI, and how does it differ from traditional AI?</h3>
+    <p>
+        Generative AI creates new content such as text, images, and music, while traditional AI mainly analyzes data and makes predictions. This makes generative AI more creative and capable of producing original outputs. Traditional AI focuses on classification and decision-making, while generative AI expands into creativity.
+    </p>
+
+    <h3>How are data analytics transforming industries?</h3>
+    <p>
+        Data analytics helps industries make smarter decisions by analyzing large datasets to uncover patterns and trends. It is used in finance for fraud detection, in healthcare for diagnosis, and in business for predicting customer behavior. These insights lead to better strategies, reduced costs, and improved services.
+    </p>
+
+    <h3>What ethical considerations are associated with AI?</h3>
+    <p>
+        AI raises concerns about data privacy, misinformation, job displacement, and biases in algorithms. These issues require responsible development and regulation to prevent harm. Ethical AI ensures fairness, transparency, and accountability.
+    </p>
+</div>
+
+<div class="output fade-in">
+    <h3>Explain the potential impact of Generative AI in a field like healthcare or education and discuss any ethical concerns</h3>
+    <p>
+The emergence of Generative AI (GenAI), defined by models capable of producing novel content such as text, images, code, and synthetic data, represents a foundational shift across professional sectors. This technology promises unprecedented leaps in productivity and personalization but simultaneously introduces complex ethical challenges that organizations must proactively address. The impact of GenAI is particularly pronounced in education, business, and creative fields like art and graphic design.
+
+<br><br>In education, GenAI’s immediate impact lies in hyper-personalized learning and efficiency. Students gain access to 24/7 personalized tutors that can explain concepts, generate practice problems tailored to individual weaknesses, and provide instant feedback on drafts. Educators, meanwhile, can rapidly generate lesson plans, differentiated materials, and assessment content, freeing up time for direct student interaction. The primary ethical concern here is academic integrity. If GenAI can produce college-level essays instantly, the value of traditional assignments diminishes, leading to the erosion of essential critical thinking and writing skills. Schools must respond by redesigning curricula to focus on prompt engineering, synthesis, and human-driven analysis that GenAI cannot replicate.
+
+<br><br>For business, particularly marketing, GenAI’s value is found in hyper-personalization and content velocity. Marketers can use GenAI to instantly generate thousands of ad copy variations, conduct rapid A/B testing, and create dynamic website content that changes based on individual user behavior. This speeds up campaign cycles and dramatically lowers content production costs. However, ethical challenges related to consumer manipulation are significant. The ability to generate deep-faked testimonials or hyper-realistic, targeted advertisements raises questions about truth and trust. Furthermore, training models on vast datasets can perpetuate algorithmic bias, leading to unfair or exclusionary targeting in ad delivery based on protected characteristics.
+
+<br><br>In art and graphic design, GenAI has become a disruptive force by democratizing creation and accelerating the design process. Designers can use tools like Midjourney or DALL-E for instant mood boarding, concept art generation, and rapid prototyping, reducing the time from idea to visual asset from weeks to minutes. This capability drastically improves project turnover. The most prominent ethical challenge is copyright and intellectual property (IP). Many GenAI models were trained on massive databases containing copyrighted artwork without explicit consent or compensation for the original creators. This practice threatens the livelihoods of human artists and raises significant legal disputes over the ownership of the generated output.
+
+<br><br>In summary, the benefits of Generative AI across all fields—be it personalized education, efficient marketing, or accelerated design—center on efficiency, customization, and speed. Conversely, the common ethical concerns revolve around IP theft, the potential for manipulation (bias and deepfakes), and the erosion of human skill/integrity. These risks can be mitigated through strict implementation of transparency standards, requiring models to disclose their training data sources; through policy and governance, establishing clear rules against academic cheating and consumer deception; and through human oversight, ensuring that GenAI remains a tool for augmentation rather than a full replacement for human judgment and creativity.
+
+    </p>
+</div>
+
+</body>
+</html>

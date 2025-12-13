@@ -1,0 +1,240 @@
+/* Color Scheme Variables */
+:root {
+    --dark-blue: #151f50;
+    --sea-blue: #0a57a4;
+    --light-blue: #6397db;
+    --white: #ffffff;
+    --off-white: #cfe1ee; 
+}
+
+/* Global Styles */
+body {
+    font-family: 'Tahoma', sans-serif;
+    background-color: var(--white);
+    color: var(--sea-blue);
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/citygif1.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+center {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.head {
+    padding: 40px 0 20px 0;
+    color: var(--white);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.head h1 {
+    color: var(--sea-blue);
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+/* Title Section */
+#sub {
+    color: var(--light-blue);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Intro Section */
+.intro {
+    font-size: 1.2em;
+}
+
+/* Overview Section */
+.overview {
+    background-color: var(--off-white);
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 60%;
+    font-size: 1.2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.overview h2 {
+    color: var(--sea-blue);
+    border-bottom: 2px solid var(--light-blue);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.overview p {
+    color: var(--dark-blue);
+    line-height: 1.6;
+}
+
+.whitebox {
+    width: 100px;
+    display: none; 
+}
+
+/* Portfolio Grid */
+h3 {
+    color: var(--sea-blue);
+    font-size: 1.8em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.portfolio-container {
+    padding: 20px;
+}
+
+.row1, .row2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.column1, .column2 {
+    text-align: center;
+    flex-basis: calc(33.333% - 20px);
+    max-width: 300px;
+}
+
+.row2 .column2 {
+    flex-basis: calc(50% - 20px); 
+}
+
+.row1image, .row2image {
+    width: 100%;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 3px solid var(--light-blue);
+    background-color: color-mix(in srgb, var(--white) 50%, transparent);
+}
+
+.row2image {
+    border: 3px solid var(--white);
+    background-color: color-mix(in srgb, var(--white) 70%, transparent);
+}
+
+.row1image:hover, .row2image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--light-blue);
+}
+
+.row1text, .row2text {
+    margin-top: 10px;
+    color: var(--sea-blue);
+    font-weight: bold;
+}
+
+.row2text {
+    color: var(--white);
+}
+
+/* About Section */
+.about {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color: var(--light-blue);
+    padding: 40px 5%;
+    margin-top: 50px;
+    color: var(--white);
+    border-radius: 10px;
+    max-width: 60%;
+    margin: 50px auto;
+}
+
+.aboutpic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-right: 30px;
+    border: 5px solid var(--white);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.about-text h4 {
+    color: var(--white);
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.aboutpara {
+    color: var(--off-white);
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Animation Implementation */
+
+/* Keyframes for Fade In/Out */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-out; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-gif {
+        margin-top: 10px;
+    }
+    .row1, .row2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .column1, .column2 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .overview {
+        width: 90%;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+        max-width: 90%;
+    }
+    .aboutpic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .about-text {
+        text-align: center;
+    }
+}
